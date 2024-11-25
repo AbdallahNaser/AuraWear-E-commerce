@@ -1,0 +1,49 @@
+.item{
+    width:300;
+}
+
+.item p{
+    margin: 5px 0px;
+    width:80%;
+}
+.item-price{
+    display:flex;
+    gap:20px;
+}
+.item-price-new{
+    color:#292669;
+    font-size:18px;
+    font-weight:500;
+}
+.item-price-old{
+    color:#8c8c8c;
+    font-size:15px;
+    font-weight:400;
+    text-decoration:line-through;
+}
+.item:hover{
+    transform:scale(1.05);
+    transition:0.6s;
+}
+
+
+.add-to-cart-btn {
+    display: inline-block;
+    background-color: #292669; /* Vibrant green for positivity and action */
+    color: #ffffff; /* White text for contrast */
+    font-size: 14px; /* Easy-to-read font size */
+    font-weight: bold; /* Emphasizes the button text */
+    padding: 8px 18px; /* Comfortable padding */
+    border: none; /* No border for a sleek look */
+    border-radius: 5px; /* Rounded corners for modern style */
+    cursor: pointer; /* Indicates it's clickable */
+    transition: all 0.3s ease; /* Smooth animation for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top:20px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838; /* Slightly darker green for hover state */
+    transform: translateY(-2px); /* Lifts the button slightly */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}

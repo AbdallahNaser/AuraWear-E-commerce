@@ -1,0 +1,198 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #4c3b73, rgba(41, 38, 105, 0.13) 60%);
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    animation: fadeInHero 1.5s ease-out forwards;
+}
+
+@keyframes fadeInHero {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    padding-left: 180px;
+    line-height: 1;
+    animation: slideInLeft 1.5s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.hero-left h2:hover {
+    color: #4c3b73; 
+}
+
+.hero .hero-left p {
+    color: #171717;
+    font-size: 70px;
+    font-weight: 700;
+    animation: fadeInText 2s ease-out forwards;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    animation: popIn 1s ease-out forwards 1.5s;
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 250px;
+    height: 55px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background-color: #292669;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    animation: bounceIn 2s ease-out forwards 2s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-latest-btn:hover {
+    background-color: #4c3b73;
+    transform: translateY(-5px);
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    animation: fadeInHero 1.5s ease-out 1s;
+}
+
+
+@media (max-width: 1024px) {
+    .hero {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .hero-left {
+        padding-left: 50px;
+    }
+
+    .hero-left h2 {
+        font-size: 18px;
+    }
+
+    .hero .hero-left p {
+        font-size: 50px;
+    }
+
+    .hero-hand-icon {
+        gap: 10px;
+    }
+
+    .hero-latest-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero-left {
+        padding-left: 20px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-left h2 {
+        font-size: 16px;
+    }
+
+    .hero .hero-left p {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .hero-hand-icon {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .hero-latest-btn {
+        width: 180px;
+        height: 45px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}

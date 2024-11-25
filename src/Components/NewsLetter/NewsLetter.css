@@ -1,0 +1,120 @@
+.newsletter {
+    width: 85%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 350px;
+    padding: 0px 140px;
+    margin-bottom: 250px;
+    background: linear-gradient(180deg, #4c3b73, rgba(41, 38, 105, 0.13) 60%);
+    gap: 30px;
+}
+
+.newsletter h1 {
+    color: #454545;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.newsletter p {
+    color: #454545;
+    font-size: 20px;
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+}
+
+.newsletter input {
+    width: 500px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.newsletter div button {
+    width: 185px;
+    height: 60px;
+    border-radius: 80px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .newsletter {
+        width: 90%; 
+        margin-top: 200px; 
+        padding: 0px 60px;
+    }
+
+    .newsletter h1 {
+        font-size: 45px; 
+    }
+
+    .newsletter p {
+        font-size: 18px; 
+    }
+
+    .newsletter div {
+        width: 550px; 
+    }
+
+    .newsletter input {
+        width: 350px;
+    }
+
+    .newsletter div button {
+        width: 150px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .newsletter {
+        width: 95%; 
+        margin-top: 150px;
+        padding: 0px 30px;
+        gap: 20px;
+    }
+
+    .newsletter h1 {
+        font-size: 35px;
+        margin-bottom: 15px; 
+    }
+
+    .newsletter p {
+        font-size: 16px;
+        text-align: center; 
+    }
+
+    .newsletter div {
+        width: 100%;
+        height: 60px;
+    }
+
+    .newsletter input {
+        width: 70%; 
+        margin-left: 15px; 
+    }
+
+    .newsletter div button {
+        width: 45%; 
+        font-size: 14px; 
+    }
+}

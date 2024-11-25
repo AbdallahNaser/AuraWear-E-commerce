@@ -1,0 +1,142 @@
+.productdisplay {
+  display: flex;
+  margin: 20px 150px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.productdisplay-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.productdisplay-img-list {
+  display: flex;
+  flex-direction: grid;
+  gap: 15px;
+}
+
+.productdisplay-img-list img {
+  height: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productdisplay-img-list img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.productdisplay-main-img {
+  width: 700px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.productdisplay-main-img:hover {
+  transform: scale(1.03);
+}
+
+.productdisplay-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  max-width: 700px;
+}
+
+.productdisplay-right h1 {
+  color: #333;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.productdisplay-right-stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffac41;
+  font-size: 18px;
+}
+
+.productdisplay-right-stars i {
+  color: #ffac41;
+}
+
+.productdisplay-right-prices {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.productdisplay-right-price-old {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.productdisplay-right-price-new {
+  color: #e63946;
+}
+
+.productdisplay-right-sizes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.productdisplay-right-sizes h1 {
+  color: #555;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.productdisplay-right-sizes div {
+  padding: 14px 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.productdisplay-right-sizes div:hover {
+  background-color: #ffe5e5;
+  transform: scale(1.05);
+}
+
+.productdisplay-right button {
+  padding: 15px 30px;
+  width: 220px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #e63946;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.productdisplay-right button:hover {
+  background-color: #d62e3b;
+  transform: translateY(-2px);
+}
+
+.productdisplay-right-category {
+  font-size: 16px;
+  color: #666;
+}
+
+.productdisplay-right-category span {
+  font-weight: bold;
+}
