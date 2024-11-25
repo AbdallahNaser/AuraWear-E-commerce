@@ -28,24 +28,6 @@ An interactive and feature-rich e-commerce platform built with **React.js**, lev
 - **AI Tools**: For generating a brand name and logo design.
 - **GitHub**: For version control and code sharing.
 
-How to Run Locally
-Clone the repository:
-git clone https://github.com/yourusername/ecommerce-react-app.git
-
-Navigate to the project directory:
-cd ecommerce-react-app
-
-Install dependencies:
-npm install
-
-Start the JSON Server:
-npx json-server --watch db.json --port 9000
-
-Run the React app:
-npm start
-
-Open the app in your browser:
-http://localhost:3000
 
 Key Components
 Navbar: Provides navigation to different sections of the app.
