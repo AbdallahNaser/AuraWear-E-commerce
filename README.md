@@ -30,18 +30,31 @@ An interactive and feature-rich e-commerce platform built with **React.js**, lev
 
 
 Key Components
+
 Navbar: Provides navigation to different sections of the app.
+
 Shop: Displays a collection of featured sections like Popular Products and Offers.
+
 ShopCategory: Filters products by category.
+
 Product: Displays product details dynamically based on ID.
+
 Add Product: Allows users to add new products.
+
 Cart: Showcases selected items for purchase.
 
+
 💡 Learning Outcomes
+
 Proficient use of React Hooks (useState, useContext, useParams, useNavigate).
+
 Integration of a mock backend using JSON Server.
+
 Improved understanding of state management with Context API.
+
 Dynamic routing and API handling with error management.
+
 Leveraging AI tools for branding and creative support.
+
 
 
